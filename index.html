@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>look at me</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body onload="typeWriter()">
+
+<sectio id="home" class="hero fullscreen">
+    <div class="hero__container">
+        <p id="demo1" class="hero__caption"></p>
+        <p id="demo2" class="hero__caption"></p>
+    </div>
+    <div class="button-container">
+        <button class="half-button one" onclick="changeGradient('linear-gradient(45deg, #FFC567, #FD5A46)')"></button>
+        <button class="half-button two" onclick="changeGradient('linear-gradient(45deg, #FD5A46, #058CD7)')"></button>
+        <button class="half-button three" onclick="changeGradient('linear-gradient(45deg, #058CD7, #00995E)')"></button>
+        <button class="half-button for" onclick="changeGradient('linear-gradient(45deg, #00995E, #552CB7)')"></button>
+        <button class="half-button five" onclick="changeGradient('linear-gradient(45deg, #552CB7, #FFC567)')"></button>
+
+    </div>
+
+    <nav>
+      <ul>
+        
+          <li> 
+            <a href="projects.html" onclick="saveColor()">ABOUT ME</a>
+      </ul>
+    
+    </nav>
+
+</section>
+
+
+
+
+<script>
+
+        function changeGradient(gradient) {
+    document.body.style.background = gradient;
+    localStorage.setItem('backgroundGradient', gradient);
+}
+
+function saveGradient() {
+    localStorage.setItem('backgroundGradientForProjects', document.body.style.background);
+}
+
+
+var phrases = [
+  'Welcome to my first website',
+  'Choose the background color'
+];
+
+var currentPhrase = 0;
+var currentChar = 0;
+var speed = 50;
+
+function typeWriter() {
+  if (currentPhrase < phrases.length) {
+    var currentParagraph = document.getElementById("demo" + (currentPhrase + 1));
+    if (currentChar < phrases[currentPhrase].length) {
+      currentParagraph.innerHTML += phrases[currentPhrase].charAt(currentChar);
+      currentChar++;
+      setTimeout(typeWriter, speed);
+    } else {
+      currentPhrase++;
+      currentChar = 0;
+      setTimeout(typeWriter, 1000); 
+    }
+  }
+}
+        
+
+
+</script>
+</body>
+
+
+</html>
+
+
+
+

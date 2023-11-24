@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="projects.css">
+
+</head>
+
+
+<body onload="move('element')">
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">change the color</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+
+        <div class="container">
+
+            <div class="text" id="textContainer">
+                    <h1 id="draggableTitle">Hi, I am Nathalia Posada</h1>
+            </div>
+
+            <div class="image" id="imageContainer">
+                <img src="./img/me.jpeg" alt="my profile photo" id="draggableImage">
+                
+            </div>
+        </div>
+
+        <div class="wavy" onmouseenter="startAnimation()" onmouseleave="stopAnimation()">
+            <span style="--i:1">◃</span>
+            <span style="--i:2">A</span>
+            <span style="--i:3"></span>
+            <span style="--i:4">B</span>
+            <span style="--i:5">R</span>
+            <span style="--i:6">A</span>
+            <span style="--i:7">Z</span>
+            <span style="--i:8">I</span>
+            <span style="--i:9">L</span>
+            <span style="--i:10">I</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">N</span>
+            <span style="--i:13"></span>
+            <span style="--i:14">G</span>
+            <span style="--i:15">I</span>
+            <span style="--i:16">R</span>
+            <span style="--i:17">L</span>
+            <span style="--i:18"></span>
+            <span style="--i:19">L</span>
+            <span style="--i:20">O</span>
+            <span style="--i:21">S</span>
+            <span style="--i:22">T</span>
+            <span style="--i:23"></span>
+            <span style="--i:24">I</span>
+            <span style="--i:25">N</span>
+            <span style="--i:26"></span>
+            <span style="--i:27">P</span>
+            <span style="--i:28">O</span>
+            <span style="--i:29">R</span>
+            <span style="--i:30">T</span>
+            <span style="--i:31">U</span>
+            <span style="--i:32">G</span>
+            <span style="--i:33">U</span>
+            <span style="--i:34">E</span>
+            <span style="--i:35">S</span>
+            <span style="--i:36">E</span>
+            <span style="--i:37"></span>
+            <span style="--i:38">L</span>
+            <span style="--i:39">A</span>
+            <span style="--i:40">N</span>
+            <span style="--i:41">D</span>
+            <span style="--i:42">S</span>
+            <span style="--i:42">▹</span>
+        </div>
+
+
+        <div class="aboutmetittle">
+            <h3>About me</h3>
+        </div>
+
+        <div class="container2">
+
+            <div class="column side"></div>
+      
+            <div class="columnaboutmetext" id="aboutMeTextContainer">
+                <canvas id="drawCanvas"></canvas>
+                <p>Hey, folks! I'm Nathalia Posada, a high-energy communicator with a blend of internship and hands-on experience, especially in the realms of communication, journalism, and design. I kicked off my journey in the hallways of a TV studio, delving into the intricacies of graphic design, marketing, and everything that makes the media world tick.</p>
+                <p>A graduate in Communication and Media from Polytechnic of Leiria, I'm currently diving headfirst into the first year of my Master's in Design and Multimedia at the University of Coimbra. My razor-sharp communication skills are getting a stylish upgrade with a dash of web design and graphic design.</p>
+                <p>And speaking of awesome projects, I had the pleasure of working and interning in the organization of the rhyme battle event in Leiria last year. It was an experience that not only tested my skills but also brought a lot of positive vibes to the local scene.</p>
+                <p>Outside the professional hustle, I'm a Brazilian lost in portuguese lands, living here for six years. I love to travel, savor new flavors, and, of course, I'm the proud mom of an adorable kitty.</p>
+                <p>I'm super pumped to continue this journey in the design universe, blending communication, multimedia, and loads of visual creativity. Come join me in exploring this world full of passions, projects, and positive vibes!</p>
+
+            </div>
+            
+       
+            <div class="column side"></div>
+
+        </div>
+
+        <div class="color-buttons">
+            <div class="color-button" style="background-color: black;" data-color="black"></div>
+            <div class="color-button" style="background-color: white;" data-color="white"></div>
+            </div>
+    </header>
+
+    <main>
+        <h2> <button class="button-35" role="button" onclick="moveElements()">Create something</button></h2>
+
+          <div class="quadriculado">
+            <div id="1" class="draggable draggable1 "></div>
+            <div id="2" class="draggable draggable2"></div>
+            <div id="3" class="draggable draggable3"></div>
+            <div id="4" class="draggable draggable4 "></div>
+            <div id="5" class="draggable draggable5"></div>
+            <div id="6" class="draggable draggable6"></div>
+            <div id="7" class="draggable draggable7 "></div>
+            <div id="8" class="draggable draggable8"></div>
+            <div id="9" class="draggable draggable9"></div>
+          </div>
+    </main>
+
+    <footer>
+        <div class="followme">
+            <h3>Follow me</h3>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-section">
+                <a href="https://www.instagram.com/nathposada/" target="_blank" rel="noopener noreferrer">
+                    <h2>Instagram</h2>
+                </a>
+            </div>
+            <div class="footer-section">
+                <a href="https://www.linkedin.com/in/nathalia-posada/" target="_blank" rel="noopener noreferrer">
+                    <h2>Linkedin</h2>
+                </a>
+            </div>
+            <div class="footer-section">
+                <a href="https://github.com/NathaliacPosada" target="_blank" rel="noopener noreferrer">
+                    <h2>GitHub</h2>
+                </a>
+           </div>
+          </div>
+    </footer>
+
+
+
+
+
+    <script>
+
+
+    const storedGradient = localStorage.getItem('backgroundGradient');
+
+// gradiente 
+if (storedGradient) {
+    document.body.style.background = storedGradient;
+}
+
+        function startAnimation() {
+  const spans = document.querySelectorAll('.wavy span');
+  spans.forEach(span => span.style.animationPlayState = 'running');
+}
+
+        function stopAnimation() {
+  const spans = document.querySelectorAll('.wavy span');
+  spans.forEach(span => span.style.animationPlayState = 'paused');
+}
+
+  makeDraggable(document.getElementById("1"));
+  makeDraggable(document.getElementById("2"));
+  makeDraggable(document.getElementById("3"));
+  makeDraggable(document.getElementById("4"));
+  makeDraggable(document.getElementById("5"));
+  makeDraggable(document.getElementById("6"));
+  makeDraggable(document.getElementById("7"));
+  makeDraggable(document.getElementById("8"));
+  makeDraggable(document.getElementById("9"));
+
+  function makeDraggable(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+    elmnt.onmousedown = function(e) {
+      e.preventDefault();
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      document.onmousemove = elementDrag;
+    };
+
+    function elementDrag(e) {
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+  }
+
+
+  function moveElements() {
+  var elements = document.querySelectorAll('.draggable');
+  
+  elements.forEach(function(element) {
+    var quadriculadoRect = document.querySelector('.quadriculado').getBoundingClientRect();
+    
+    var randomX = Math.floor(Math.random() * (quadriculadoRect.width - element.clientWidth));
+    var randomY = Math.floor(Math.random() * (quadriculadoRect.height - element.clientHeight));
+    
+    element.style.left = randomX + 'px';
+    element.style.top = randomY + 'px';
+  });
+}
+
+//arrastar título
+let isDragging = false;
+let startX = 0;
+let initialLeft = 0;
+
+const textContainer = document.querySelector('.text'); 
+
+textContainer.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.clientX;
+  initialLeft = textContainer.getBoundingClientRect().left;
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const offsetX = e.clientX - startX;
+    const newLeft = initialLeft + offsetX;
+
+    textContainer.style.left = `${newLeft}px`;
+  }
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+//canva
+
+document.addEventListener("DOMContentLoaded", function () {
+      const textContainer = document.getElementById("aboutMeTextContainer");
+      const canvas = document.getElementById("drawCanvas");
+      const context = canvas.getContext("2d");
+      const colorButtons = document.querySelectorAll('.color-button');
+
+      canvas.width = textContainer.clientWidth;
+      canvas.height = textContainer.clientHeight;
+
+      let isDrawing = false;
+      let currentColor = "#000"; 
+
+      colorButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          currentColor = button.dataset.color;
+        });
+      });
+
+      canvas.addEventListener("mousedown", startDrawing);
+      canvas.addEventListener("mousemove", draw);
+      canvas.addEventListener("mouseup", stopDrawing);
+      canvas.addEventListener("mouseout", stopDrawing);
+
+      function startDrawing(e) {
+        isDrawing = true;
+        draw(e);
+      }
+
+      function draw(e) {
+        if (!isDrawing) return;
+
+        context.lineWidth = 5;
+        context.lineCap = "round";
+        context.strokeStyle = currentColor;
+
+        const rect = canvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        context.lineTo(x, y);
+        context.stroke();
+        context.beginPath();
+        context.moveTo(x, y);
+      }
+
+      function stopDrawing() {
+        isDrawing = false;
+        context.beginPath();
+      }
+
+      window.addEventListener("resize", function () {
+        canvas.width = textContainer.clientWidth;
+        canvas.height = textContainer.clientHeight;
+
+    });
+    });
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    overflow: hidden;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 30px 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.hero__container {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.half-button {
+    width: 100px;
+    height: 100px; 
+    padding: 10px; 
+    font-size: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 4px;
+}
+
+
+.half-button span {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: #001524;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.half-button.one {
+    background: linear-gradient(45deg, #FFC567, #FD5A46) top, white 30%;
+    background-size: 100% 70%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.half-button.two {
+    background: linear-gradient(45deg, #FD5A46, #058CD7) top, white 30%;
+    background-size: 100% 70%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.half-button.three {
+    background: linear-gradient(45deg, #058CD7, #00995E) top, white 30%;
+    background-size: 100% 70%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.half-button.for {
+    background: linear-gradient(45deg, #00995E, #552CB7) top, white 30%;
+    background-size: 100% 70%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.half-button.five {
+    background: linear-gradient(445deg, #552CB7, #FFC567) top, white 30%;
+    background-size: 100% 70%, 100% 100%;
+    background-repeat: no-repeat;
+}
+
